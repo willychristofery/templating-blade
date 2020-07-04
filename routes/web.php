@@ -15,11 +15,10 @@ Route::get('/master', function () {
     return view('adminlte.master');
 });
 
-Route::get('/', function () {
-    return view('items.table');
-});
+Route::get('/pertanyaan/create', 'PertanyaanController@create');
+Route::post('/pertanyaan', 'PertanyaanController@tanya');
+Route::get('/pertanyaan', 'PertanyaanController@index');
 
-Route::get('/data-tables', function () {
-    return view('items.datatables');
-});
-
+Route::get('/jawaban/create', 'JawabanController@create');
+Route::post('/jawaban', 'JawabanController@jawab');
+Route::get('/jawaban', 'JawabanController@index');

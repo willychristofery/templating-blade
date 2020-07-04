@@ -57,7 +57,5 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('/adminlte/dist/js/demo.js')}}"></script>
 
-<!-- script -->
-@stack('script')
 </body>
 </html>
